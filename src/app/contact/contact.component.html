@@ -12,7 +12,8 @@
       <tr *ngFor="let contact of contacts">
         <td>{{ contact.subject }}</td>
         <td>{{ contact.message }}</td>
-        <td>Show Detail</td>
+        <td><a [routerLink]="['/contact-details', contact._id]" class="btn btn-success">Details</a>
+        </td>
       </tr>
     </tbody>
   </table>

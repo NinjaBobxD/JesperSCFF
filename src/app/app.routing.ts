@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { AuthGuard } from './_guards/index';
+// import { AuthGuard } from './_guards/index';
 
 import { LoginComponent } from './login/login.component';
 import { CoachingComponent } from './coaching/coaching.component';
@@ -17,14 +17,14 @@ import { AdminComponent } from './admin/admin.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'coaching', component: CoachingComponent} ,
-  { path: 'contact', component: ContactComponent },
+  { path: 'contacts', component: ContactComponent },
   { path: 'contact-details/:id', component: ContactDetailComponent },
-  { path: 'contact-create', component: ContactCreateComponent },
+  { path: 'contact', component: ContactCreateComponent },
   { path: 'motivation', component: MotivationComponent },
   { path: 'videos', component: VideoComponent },
   { path: 'workshops', component: WorkshopComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] }
+  { path: 'admin', component: AdminComponent /* , canActivate: [AuthGuard] */ }
 ];
 
 export const routing = RouterModule.forRoot(routes);
