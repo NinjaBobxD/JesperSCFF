@@ -1,3 +1,56 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <img src="../img/Jesper-SC-logo-blue.gif" style="margin-left:10px; margin-top:2px;" height="45" [routerLink]="['']">
+      <a [routerLink]="['contact']">Kontakt</a>
+      <a [routerLink]="['videos']">Videor</a>
+      <a [routerLink]="['motivation']">Motivation</a>
+      <a [routerLink]="['coaching']">Coaching</a>
+      <a [routerLink]="['workshops']">Workshops</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+
+  <div class="splitter"></div>
+  <ul>
+    <li>
+      <div class="text">
+        <h4>Adresse</h4>
+        <div>Jesper Schack Clausen<br>Vesterbrogade 149<br>1620 København<br>CVR nr: 362 61366<br>Mobil: 6045 8345<br>Mail: jesper@jespersc.dk</div>
+      </div>
+    </li>
+    <li>
+      <div class="text">
+        <h4>F&oslash;lg mig</h4>
+        <a href="https://www.facebook.com/JesperSC/">
+        <img src="../img/Facebook-ikon.png">
+        </a>
+        <a href="https://www.youtube.com/results?search_query=jesper+schack+clausen">
+        <img src="../img/Youtube-ikon.png">
+        </a>
+        <a href="https://www.linkedin.com/in/jesperschackclausen/">
+        <img src="../img/Linkedin-ikon.png">
+        </a>
+      </div>
+    </li>
+    <li>
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <div id="mc_embed_signup">
+        <form action="//facebook.us15.list-manage.com/subscribe/post?u=aa83ae4dc44878cc0f923b5ff&amp;id=80481526a7" method="post"
+          id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <h4>Tilmeld dig nyhedsbrevet</h4>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aa83ae4dc44878cc0f923b5ff_80481526a7" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div>
+
+    </li>
+  </ul>
+
+  <div class="copyright">&copy; JESPER SCHACK CLAUSEN</div>
+</footer>
